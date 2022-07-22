@@ -348,7 +348,7 @@ main {
     grid-area: imagenContacto1;
 }
 
-@media (min-width: px) {
+@media (min-width: 320px) {
 
     /*media para Index*/
     .grillaIndex {
@@ -434,8 +434,171 @@ main {
     }
 }
 
+@media (min-width: 480px) {
 
-/*TRABAJO CON @MEDIA*/
+    /*media para Index*/
+    .grillaIndex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "primerSection"
+            "imagenLogo4"
+            "footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para Ubicacion*/
+    .grillaUbicacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "imagenUbicacion"
+            "mapaUbi"
+            "footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para productos*/
+    .grillaProducto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "titulo"
+            "imagen1"
+            "imagen2"
+            "imagen3"
+            "imagen4"
+            "imagen5"
+            "imagen6"
+            "imagen7"
+            "imagen8"
+            "imagen9"
+            "footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para Preguntas*/
+    .grillaPreguntas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "cajaPreguntas"
+            "imagenPreguntas1"
+            "footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para Contacto*/
+    .grillaContacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "cajaContacto"
+            "imagenContacto1"
+            "footer"
+        ;
+        gap: 20px;
+    }
+
+    ul li a {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 600px) {
+
+    /*media para Index*/
+    .grillaIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "primerSection primerSection"
+            "imagenLogo4 imagenLogo4"
+            "footer footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para Ubicacion*/
+    .grillaUbicacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "imagenUbicacion imagenUbicacion"
+            "mapaUbi mapaUbi"
+            "footer footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para productos*/
+    .grillaProducto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "titulo imagen1"
+            "imagen2 imagen3"
+            "imagen4 imagen5"
+            "imagen6 imagen7"
+            "imagen8 imagen9"
+            "footer footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para Preguntas*/
+    .grillaPreguntas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "cajaPreguntas cajaPreguntas"
+            "imagenPreguntas1 imagenPreguntas1"
+            "footer footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para Contacto*/
+    .grillaContacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "cajaContacto cajaContacto"
+            "imagenContacto1 imagenContacto1"
+            "footer footer"
+        ;
+        gap: 20px;
+    }
+
+    ul li a {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media (min-width: 768px) {
 
     /*media para Index*/
@@ -518,6 +681,79 @@ main {
 }
 
 @media (min-width: 1024px) {
+
+    /*media para index*/
+    .grillaIndex {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "primerSection primerSection primerSection"
+            "imagenLogo4 imagenLogo4 imagenLogo4"
+            "footer footer footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para ubicacion*/
+    .grillaUbicacion {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "imagenUbicacion imagenUbicacion mapaUbi mapaUbi"
+            "footer footer footer footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para producto*/
+    .grillaProducto {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "titulo titulo titulo"
+            "imagen1 imagen2 imagen3"
+            "imagen4 imagen5 imagen6"
+            "imagen7 imagen8 imagen9"
+            "footer footer footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para preguntas*/
+    .grillaPreguntas {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "cajaPreguntas cajaPreguntas cajaPreguntas"
+            "imagenPreguntas1 imagenPreguntas1 imagenPreguntas1"
+            "footer footer footer"
+        ;
+        gap: 20px;
+    }
+
+    /*media para contacto*/
+    .grillaContacto {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "cajaContacto cajaContacto cajaContacto"
+            "imagenContacto1 imagenContacto1 imagenContacto1"
+            "footer footer footer"
+        ;
+        gap: 20px;
+    }
+
+    ul li a {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 1200px) {
 
     /*media para index*/
     .grillaIndex {
